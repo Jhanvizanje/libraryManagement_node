@@ -1,0 +1,18 @@
+<head>
+    <title>List Users</title>
+    <link rel="stylesheet" type="text/css" href="../css/style1.css">
+    </head>
+<body >
+<h3><%= msg %></h3>
+<table> 
+    <tr><th>ID</th><th>User Name</th><th>Email</th></tr>
+
+<% users.forEach(function(item){ %>
+    <tr>
+        <td><%= item.u_id %></td>
+        <td><%= item.u_name %></td>             
+        <td><%= item.email %></td>  
+    </tr>
+    <% }); %>
+</table>
+</body>

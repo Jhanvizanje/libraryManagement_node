@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>Admin</title>
+        <link rel="stylesheet" type="text/css" href="css/style1.css">
+
+        </head>
+        <body>
+            
+            <div style="margin:10px;padding-top:40px;padding-bottom: 5px;"> 
+                <h1 style="display:inline">Admin Library</h1>
+                <form method="post" action="/search" target="frame" style="float:right;margin: 0px;padding: 0px;">
+                    <input type="text" name="name" style="display:inline"><input type="submit" value="search" style="width: 100px;">
+                </form>
+            </div>
+            <div class="container2" style="margin:10px;float:left">
+
+                
+                <form class="form">
+                    
+                <button type="button" name="list_books" class="button"><a href="/booksList" target="frame"><span>List Of Books</span></a></button>
+                <button type="button" name="add_book" class="button"><a href="/addBook" target="frame"><span>Add Book</span></a></button>
+                <button type="button" name="add_user" class="button"><a href="/addUser" target="frame"><span>Add User</span></a></button>
+                <button type="button" name="issue_book" class="button"><a href="/issueBook" target="frame"><span>Issue Book</span></a></button>
+                <button type="button" name="list_isuuedbook" class="button"><a href="/issuedBooksList" target="frame"><span>List Of Issued Books</span></a></button>
+                <button type="button" name="list_users" class="button"><a href="/usersList" target="frame"><span>List Of Users</span></a></button>
+                <button type="button" name="return_book" class="button"><a href="/returnBook" target="frame"><span>Return Book</span></a></button>
+                </form>
+                
+            </div> 
+            <iframe src="/booksList" name="frame" style="float:right;border:2px solid #2F4F4F; background-color: hsl(44, 100%, 81%) ;" width="78%" height="100%"></iframe>          
+                
+
+            </body>
+    </html>

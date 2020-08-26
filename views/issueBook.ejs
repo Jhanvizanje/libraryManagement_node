@@ -1,0 +1,24 @@
+<html>
+    <head>
+
+        <title>
+            Login
+            </title>
+            <link rel="stylesheet" type="text/css" href="css/style1.css">
+        </head>
+        <body>
+            <div class="container2">
+                <h1>Issue a book</h1><br>
+                <h3><%= msg %></h3>
+                <p style="color:white"><%= msg %></p>
+            <form method="POST" class="form" action="/issueBook">
+                <input type="text" name="uid" placeholder="User ID" required><br>
+                <input type="text" name="bid" placeholder="Book ID" required><br>
+                <input type="text" name="period" placeholder="Period" required><br>
+                <input type="date" name="idate" placeholder="Date" required><br>                
+                <input type="password" name="pwd" placeholder="password" required><br>
+                <button type="submit" name="btn" class="button"><span>Issue</span></button>
+            </form>
+            </div>
+            </body>
+    </html>
